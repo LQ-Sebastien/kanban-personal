@@ -1,0 +1,9 @@
+LISTE: code liste, nom, position
+CONTIENT, 0N LISTE, 11 CARTE
+
+:
+CARTE: code carte, contenu, position, couleur
+
+:
+POSSEDE, 0N CARTE, 0N LABEL
+LABEL: code label, nom, couleur

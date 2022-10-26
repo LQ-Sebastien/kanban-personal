@@ -1,0 +1,145 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "O'Kanban",
+    "description": "Le Kanban magique des joyeux Cassini",
+    "termsOfService": "http://swagger.io/terms/",
+    "contact": { "name": "LQ-Sebastien" },
+    "license": { "name": "MIT" }
+  },
+  "host": "localhost:3000",
+  "basePath": "/api",
+  "schemes": ["http"],
+  "consumes": ["application/x-www-form-urlencoded"],
+  "produces": ["application/json"],
+  "tags": [
+    { "name": "Lists", "description": "Listes du O'Kanban" }
+  ],
+  "paths": {
+
+    "/lists": {
+
+      "get": {
+        "tags": ["Lists"],
+        "description": "Retourne l'ensemble des Listes existantes",
+        "operationId": "getLists",
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "Un tableau de Listes",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/List"
+              }
+            }
+          }
+        }
+      },
+
+      "post": {
+        "tags": ["Lists"],
+        "description": "Créer une nouvelle Liste",
+        "operationId": "createList",
+        "produces": ["application/json"],
+        "consumes": ["application/x-www-form-urlencoded"],
+        "parameters": [{
+          "in": "body",
+          "description": "Information de la liste",
+          "schema": {
+            "type": "object",
+            "required": ["name"],
+            "properties": {
+              "name": { "type": "string", "example": "Nom de la liste" },
+              "position": { "type": "number", "example": 1 }
+            }
+          }
+        }],
+        "responses": {
+          "200": {
+            "description": "La liste créée",
+            "schema": {
+              "$ref": "#/definitions/List"
+            }
+          },
+          "400": {
+            "description": "Le nom de la liste n'est pas fourni",
+            "schema": {
+              "properties": {
+                "error": { "type": "string", "example": "Missing body parameter: name" }
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "/lists/:id": {
+
+      "patch": {
+        "tags": ["Lists"],
+        "description": "Modifier une liste existante",
+        "operationId": "updateList",
+        "produces": ["application/json"],
+        "consumes": ["application/x-www-form-urlencoded"],
+        "parameters": [
+          {
+            "in": "path",
+            "description": "L'ID de la liste à modifier",
+            "type": "number"
+          },
+          {
+          "in": "body",
+          "description": "Champs à modifier",
+          "schema": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string", "example": "Nom de la liste" },
+              "position": { "type": "number", "example": 1 }
+            }
+          }
+        }],
+        "responses": {
+          "200": {
+            "description": "La liste mise à jour",
+            "schema": {
+              "$ref": "#/definitions/List",
+              "example": "coucou"
+            }
+          },
+          "404": {
+            "description": "L'ID fourni ne correspond à aucune liste",
+            "schema": {
+              "properties": {
+                "error": { "type": "string", "example": "List not found. Please verify the provided id." }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+
+  "definitions": {
+
+    "List": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "number", "example": 1 },
+        "name": { "type": "string", "example": "Nom de la liste" },
+        "position": { "type": "number", "example": 1 },
+        "created_at": { "type": "string", "format": "date-time", "example": "2022-01-01T12:00:00.000Z" },
+        "updated_at": { "type": "string", "format": "date-time", "example": "2022-01-01T12:00:00.000Z" }
+      }
+    },
+
+    "Error": {
+      "type": "object",
+      "properties": {
+        "error": { "type": "string", "example": "Unexpected server error. Please try again later." }
+      }
+    }
+  }
+}

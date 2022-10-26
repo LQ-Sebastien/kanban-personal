@@ -1,0 +1,82 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="340" height="328" view_box="0 0 340 328"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:link="http://www.w3.org/1999/xlink">\n\n<desc>Généré par Mocodo 2.3.9 le Wed, 11 May 2022 10:01:03</desc>
+
+<rect id="frame" x="0" y="0" width="340" height="328" fill="#f5f5f5" stroke="none" stroke-width="0"/>
+
+<!-- Association CONTIENT -->
+<line x1="48" y1="56" x2="171" y2="56" stroke="#bf812d" stroke-width="1"/>
+<text x="92" y="72.0" fill="#01665e" font-family="Futura" font-size="11">0,N</text>
+<line x1="171" y1="164" x2="171" y2="56" stroke="#bf812d" stroke-width="1"/>
+<text x="176.0" y="101" fill="#01665e" font-family="Futura" font-size="11">1,1</text>
+<g id="association-CONTIENT">
+	<path d="M 212 27 a 14 14 90 0 1 14 14 V 55 h -110 V 41 a 14 14 90 0 1 14 -14" fill="#dfc27d" stroke="#dfc27d" stroke-width="0"/>
+	<path d="M 226 55.0 v 16 a 14 14 90 0 1 -14 14 H 130 a 14 14 90 0 1 -14 -14 V 55.0 H 110" fill="#f6e8c3" stroke="#f6e8c3" stroke-width="0"/>
+	<rect x="116" y="27" width="110" height="58" fill="none" rx="14" stroke="#bf812d" stroke-width="1.5"/>
+	<line x1="116" y1="55" x2="226" y2="55" stroke="#bf812d" stroke-width="1.5"/>
+	<text x="123" y="48.3" fill="#000000" font-family="Copperplate" font-size="18">CONTIENT</text>
+</g>
+
+<!-- Association POSSEDE -->
+<line x1="171" y1="164" x2="171" y2="272" stroke="#bf812d" stroke-width="1"/>
+<text x="176.0" y="235" fill="#01665e" font-family="Futura" font-size="11">0,N</text>
+<line x1="291" y1="272" x2="171" y2="272" stroke="#bf812d" stroke-width="1"/>
+<text x="227" y="288.0" fill="#01665e" font-family="Futura" font-size="11">0,N</text>
+<g id="association-POSSEDE">
+	<path d="M 208 243 a 14 14 90 0 1 14 14 V 271 h -102 V 257 a 14 14 90 0 1 14 -14" fill="#dfc27d" stroke="#dfc27d" stroke-width="0"/>
+	<path d="M 222 271.0 v 16 a 14 14 90 0 1 -14 14 H 134 a 14 14 90 0 1 -14 -14 V 271.0 H 102" fill="#f6e8c3" stroke="#f6e8c3" stroke-width="0"/>
+	<rect x="120" y="243" width="102" height="58" fill="none" rx="14" stroke="#bf812d" stroke-width="1.5"/>
+	<line x1="120" y1="271" x2="222" y2="271" stroke="#bf812d" stroke-width="1.5"/>
+	<text x="127" y="264.3" fill="#000000" font-family="Copperplate" font-size="18">POSSEDE</text>
+</g>
+
+<!-- Entity LISTE -->
+<g id="entity-LISTE">
+	<g id="frame-LISTE">
+		<rect x="9" y="9" width="78" height="30" fill="#80cdc1" stroke="#80cdc1" stroke-width="0"/>
+		<rect x="9" y="39.0" width="78" height="64" fill="#c7eae5" stroke="#c7eae5" stroke-width="0"/>
+		<rect x="9" y="9" width="78" height="94" fill="none" stroke="#35978f" stroke-width="1.5"/>
+		<line x1="9" y1="39" x2="87" y2="39" stroke="#35978f" stroke-width="1.5"/>
+	</g>
+	<text x="21" y="30.3" fill="#000000" font-family="Copperplate" font-size="18">LISTE</text>
+	<text x="17" y="56.1" fill="#000000" font-family="Gill Sans" font-size="15">code liste</text>
+	<line x1="17" y1="59" x2="78" y2="59" stroke="#000000" stroke-width="1"/>
+	<text x="17" y="73.1" fill="#000000" font-family="Gill Sans" font-size="15">nom</text>
+	<text x="17" y="90.0" fill="#000000" font-family="Gill Sans" font-size="15">position</text>
+</g>
+
+<!-- Entity CARTE -->
+<g id="entity-CARTE">
+	<g id="frame-CARTE">
+		<rect x="129" y="109" width="84" height="30" fill="#80cdc1" stroke="#80cdc1" stroke-width="0"/>
+		<rect x="129" y="139.0" width="84" height="80" fill="#c7eae5" stroke="#c7eae5" stroke-width="0"/>
+		<rect x="129" y="109" width="84" height="110" fill="none" stroke="#35978f" stroke-width="1.5"/>
+		<line x1="129" y1="139" x2="213" y2="139" stroke="#35978f" stroke-width="1.5"/>
+	</g>
+	<text x="140" y="130.3" fill="#000000" font-family="Copperplate" font-size="18">CARTE</text>
+	<text x="137" y="156.1" fill="#000000" font-family="Gill Sans" font-size="15">code carte</text>
+	<line x1="137" y1="159" x2="204" y2="159" stroke="#000000" stroke-width="1"/>
+	<text x="137" y="173.1" fill="#000000" font-family="Gill Sans" font-size="15">contenu</text>
+	<text x="137" y="190.1" fill="#000000" font-family="Gill Sans" font-size="15">position</text>
+	<text x="137" y="207.0" fill="#000000" font-family="Gill Sans" font-size="15">couleur</text>
+</g>
+
+<!-- Entity LABEL -->
+<g id="entity-LABEL">
+	<g id="frame-LABEL">
+		<rect x="251" y="225" width="80" height="30" fill="#80cdc1" stroke="#80cdc1" stroke-width="0"/>
+		<rect x="251" y="255.0" width="80" height="64" fill="#c7eae5" stroke="#c7eae5" stroke-width="0"/>
+		<rect x="251" y="225" width="80" height="94" fill="none" stroke="#35978f" stroke-width="1.5"/>
+		<line x1="251" y1="255" x2="331" y2="255" stroke="#35978f" stroke-width="1.5"/>
+	</g>
+	<text x="261" y="246.3" fill="#000000" font-family="Copperplate" font-size="18">LABEL</text>
+	<text x="259" y="272.1" fill="#000000" font-family="Gill Sans" font-size="15">code label</text>
+	<line x1="259" y1="275" x2="323" y2="275" stroke="#000000" stroke-width="1"/>
+	<text x="259" y="289.1" fill="#000000" font-family="Gill Sans" font-size="15">nom</text>
+	<text x="259" y="306.0" fill="#000000" font-family="Gill Sans" font-size="15">couleur</text>
+</g>
+</svg>
